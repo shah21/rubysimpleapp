@@ -1,0 +1,17 @@
+<h4>
+    <%= link_to post.title, post_path(post) %>
+</h4>
+
+<p>
+    <%= post.details %>
+</p>
+
+<div class="sub-text">
+<b>Contact me:</b> 
+<i><%= post.user.email %></i><br>
+
+<b>Posted at:</b> 
+<i><%= post.created_at.day %>/<%= post.created_at.month %>/<%= post.created_at.year %></i>
+
+</div>
+

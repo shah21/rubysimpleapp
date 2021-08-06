@@ -1,0 +1,20 @@
+<%= form_with model:post do |f| %>
+    <p>
+        <%= f.label 'title:'%><br>
+        <%= f.text_field :title %>
+    </p>
+    <p>
+        <%= f.label 'details:'%><br>
+        <%= f.text_area :details,size: "30x10" %>
+    </p>
+    
+    <p>
+        <%= f.label 'final date:'%><br>
+        <%= f.date_field :final_date %>
+    </p>
+    
+    <p>
+        <%= f.submit "Save", disable_with: 'Submiting...' %>
+    </p>
+    
+<% end %>
