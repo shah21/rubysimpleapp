@@ -63,3 +63,5 @@ class PostsController < ApplicationController
         end
     end
 end
+
+# just a comment
